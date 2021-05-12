@@ -37,37 +37,43 @@ namespace AdventureWorksSales
             // salesListBox
             // 
             this.salesListBox.FormattingEnabled = true;
-            this.salesListBox.Location = new System.Drawing.Point(12, 187);
+            this.salesListBox.ItemHeight = 16;
+            this.salesListBox.Location = new System.Drawing.Point(16, 230);
+            this.salesListBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.salesListBox.Name = "salesListBox";
-            this.salesListBox.Size = new System.Drawing.Size(836, 342);
+            this.salesListBox.Size = new System.Drawing.Size(1113, 420);
             this.salesListBox.TabIndex = 0;
             this.salesListBox.DoubleClick += new System.EventHandler(this.salesListBox_DoubleClick);
             // 
             // customersComboBox
             // 
             this.customersComboBox.FormattingEnabled = true;
-            this.customersComboBox.Location = new System.Drawing.Point(12, 58);
+            this.customersComboBox.Location = new System.Drawing.Point(16, 71);
+            this.customersComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.customersComboBox.Name = "customersComboBox";
-            this.customersComboBox.Size = new System.Drawing.Size(390, 21);
+            this.customersComboBox.Size = new System.Drawing.Size(519, 24);
             this.customersComboBox.TabIndex = 1;
+            this.customersComboBox.SelectedIndexChanged += new System.EventHandler(this.customersComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 35);
+            this.label1.Location = new System.Drawing.Point(19, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.Size = new System.Drawing.Size(117, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Select customer>";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(860, 547);
+            this.ClientSize = new System.Drawing.Size(1147, 673);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.customersComboBox);
             this.Controls.Add(this.salesListBox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.ResumeLayout(false);

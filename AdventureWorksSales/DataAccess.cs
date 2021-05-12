@@ -10,7 +10,7 @@ namespace AdventureWorksSales
 {
     class DataAccess
     {
-        static string connectionString = "";
+        static string connectionString = ConfigurationManager.ConnectionStrings["AdventureWorks2016"].ConnectionString;
 
         public static List<Customer> GetCustomers()
         {
